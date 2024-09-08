@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Repair Request - Tech Repair & Sales Shop</title>
+    <link rel="stylesheet" href="./css/repair.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="./images/banner 1.jpg" alt="Shop Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="repair-request.html">Repair Request</a></li>
+            </ul>
+        </nav>
+        <div class="header-extras">
+            <input type="text" placeholder="Search...">
+            <a href="cart.html">Cart</a>
+            <a href="login.html">Sign In</a>
+        </div>
+    </header>
+
+    <section class="repair-request-section">
+        <h2>Submit Repair Request</h2>
+        <form action="submit_repair_request.php" method="POST">
+            <label for="device">Select Device Type:</label>
+            <select id="device" name="device" required>
+                <option value="" disabled selected>Select Device Type</option>
+                <option value="laptop">Laptop</option>
+                <option value="printer">Printer</option>
+                <option value="pos">POS Device</option>
+                <option value="phone">Phone</option>
+                <option value="speaker">Speaker</option>
+            </select>
+
+            <label for="brand">Device Brand:</label>
+            <input type="text" id="brand" name="brand" required>
+
+            <label for="model">Device Model:</label>
+            <input type="text" id="model" name="model" required>
+
+            <label for="issue">Describe the Issue:</label>
+            <textarea id="issue" name="issue" required></textarea>
+
+            <button type="submit" class="btn">Submit Request</button>
+        </form>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 Tech Repair & Sales Shop. All Rights Reserved.</p>
+            <p>Address: Sector 23 A, Gurgaon | Phone: 6367359870</p>
+        </div>
+    </footer>
+    
+    <script src="js/script.js"></script>
+</body>
+</html>
